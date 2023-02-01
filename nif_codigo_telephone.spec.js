@@ -1,5 +1,5 @@
 test.describe('Création de compte échouée', () => {
-  test.only('cas nif mauvais format', async ({ page }) => {
+  test('cas nif mauvais format', async ({ page }) => {
     await page.goto("https://stg-kalamazoo.rajapack.xyz/");
     await page.getByRole('button', { name: "Identificarse" }).click();
    
